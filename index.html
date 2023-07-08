@@ -5,13 +5,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Totóro, el perrito meteorológico</title>
+
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #92a4ff;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #92a4ff;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .image {
+            float: right;
+            margin: 0 0 20px 20px;
+            max-width: 25%;
+            height: auto;
+        }
+
+        .image2 {
+            float: left;
+            margin: 0 20px 20px 0;
+            max-width: 25%;
+            height: auto;
+        }
+        .article {
+            float: left;
+            width: 70%;
+            background-color: #FFF;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #CCC;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+
 </head>
 <body>
     <header>
         <h1>Totóro, el perro meteorólogo.</h1>
         <nav>
            <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="audivisuales.html">Audiovisuales</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
                 <li><a href="preferencias.html">Preferencias</a></li>
@@ -19,22 +116,21 @@
         </nav>
     </header>
 
-    <h2>
-        Totóro.  El estracto puro de la ternura concreta.
-    </h2>
+    <h2 style="margin: 15px;">Totóro.  El estracto puro de la ternura concreta.</h2>
+
     <hr>
 
-    <article>
+    <article class="container">
         <h3>Totóro, el perro meteorólogo.</h3>
-        <img src="assets/images/jamie-street-s9Tf1eBDFqw-unsplash.jpg" alt="Perrito en cama">
+        <img class="image" src="assets/images/jamie-street-s9Tf1eBDFqw-unsplash.jpg" alt="Perrito en cama">
         <p> 
             Totoro, un perro de color champán con un corazón lleno de amor, ha dejado una huella indeleble en la vida de aquellos que han tenido el privilegio de conocerlo. Este encantador canino fue adoptado y rápidamente se convirtió en un miembro muy querido de su familia.  Desde el momento en que llegó a su nuevo hogar, Totoro demostró ser una fuente inagotable de cariño. Siempre dispuesto a dar y recibir afecto, sus muestras de amor se han convertido en su sello distintivo. Sus ojos brillantes y su cola en constante movimiento son la expresión tangible de su amor incondicional.
         </p>
-        <img src="assets/images/jamie-street-uNNCs5kL70Q-unsplash.jpg" alt="Perrito jugando con palito">
+        <img class="image2" src="assets/images/jamie-street-uNNCs5kL70Q-unsplash.jpg" alt="Perrito jugando con palito">
         <p>
             Sin embargo, Totoro no es un perro común en cuanto a su alimentación. A diferencia de muchos de sus compañeros caninos, no se deja llevar fácilmente por cualquier alimento. Es selectivo y prefiere comer solo lo que le gusta y le sienta bien. Su paladar refinado le ha enseñado a rechazar cualquier alimento que no cumpla con sus exigentes estándares.  Aunque Totoro no es un perro que ladre con frecuencia, su silencio no significa falta de comunicación. Expresa sus necesidades y emociones de diversas maneras, a través de sus expresivos ojos y su lenguaje corporal. Los que lo conocen bien pueden leer su lenguaje no verbal y entender su estado de ánimo sin necesidad de palabras.
         </p>
-        <img src="assets/images/jamie-street-UtrE5DcgEyg-unsplash.jpg" alt="Perito viendo el clima">
+        <img class="image" src="assets/images/jamie-street-UtrE5DcgEyg-unsplash.jpg" alt="Perito viendo el clima">
         <p>
             Una de las cualidades más asombrosas de Totoro es su capacidad para anticipar los cambios climáticos. Cada vez que se pone a temblar inquietamente, su familia sabe que un aguacero fuerte está en camino. Totoro ha desarrollado un sexto sentido para la lluvia y se convierte en el pronosticador no oficial del hogar, advirtiendo a todos sobre las inclemencias del tiempo que se avecinan.  A pesar de su aparente miedo a la lluvia, Totoro encuentra consuelo en el contacto humano. Le encanta que le hagan cariño y se deleita con las caricias suaves que le brindan. Es en esos momentos de cercanía cuando Totoro muestra su lado más relajado y feliz. Su serenidad y tranquilidad son contagiosas, creando un ambiente de paz en su entorno. 
         </p>
@@ -43,7 +139,7 @@
         </p>
     </article>
 
-<footer>
+<footer class="footer">
     <p>Derechos Reservados &copy; 2023</p>
 </footer>
     
